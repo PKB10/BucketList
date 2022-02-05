@@ -11,6 +11,8 @@
 		8EF4083527AF1969002030DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4083427AF1969002030DF /* ContentView.swift */; };
 		8EF4083727AF196D002030DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF4083627AF196D002030DF /* Assets.xcassets */; };
 		8EF4083A27AF196D002030DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF4083927AF196D002030DF /* Preview Assets.xcassets */; };
+		8EF4084127AF1DA4002030DF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4084027AF1DA4002030DF /* CircleImage.swift */; };
+		8EF4084327AF1EAD002030DF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4084227AF1EAD002030DF /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8EF4083427AF1969002030DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EF4083627AF196D002030DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF4083927AF196D002030DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EF4084027AF1DA4002030DF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		8EF4084227AF1EAD002030DF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				8EF4083427AF1969002030DF /* ContentView.swift */,
 				8EF4083627AF196D002030DF /* Assets.xcassets */,
 				8EF4083827AF196D002030DF /* Preview Content */,
+				8EF4084027AF1DA4002030DF /* CircleImage.swift */,
+				8EF4084227AF1EAD002030DF /* MapView.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EF4083527AF1969002030DF /* ContentView.swift in Sources */,
+				8EF4084327AF1EAD002030DF /* MapView.swift in Sources */,
 				8EF4083327AF1969002030DF /* BucketListApp.swift in Sources */,
+				8EF4084127AF1DA4002030DF /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
