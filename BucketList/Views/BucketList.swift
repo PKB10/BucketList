@@ -9,15 +9,28 @@ import SwiftUI
 
 struct BucketList: View {
     var body: some View {
-        List(listItems){ listItem in
-            
-            ListRow(listItem: listItem)
+        
+        NavigationView{
+            List(listItems){ listItem in
+                NavigationLink{
+                    ListItemDetail(listItem: listItem)
+                } label:{
+                    ListRow(listItem: listItem)
+                }
+            }
+            .navigationTitle("Bucket List")
         }
+        
     }
 }
 
 struct BucketList_Previews: PreviewProvider {
     static var previews: some View {
-        BucketList()
+        ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
+                    BucketList()
+                        .previewDevice(PreviewDevice(rawValue: deviceName))
+                        .previewDisplayName(deviceName)
+                }
+
     }
 }

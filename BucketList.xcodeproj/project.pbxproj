@@ -18,6 +18,7 @@
 		8EF4086C27B14F69002030DF /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4086B27B14F69002030DF /* ListData.swift */; };
 		8EF4087227B15099002030DF /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4087127B15099002030DF /* ListRow.swift */; };
 		8EF4087427B15334002030DF /* BucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4087327B15334002030DF /* BucketList.swift */; };
+		8EF4087627B24E86002030DF /* ListItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4087527B24E86002030DF /* ListItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8EF4086B27B14F69002030DF /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 		8EF4087127B15099002030DF /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		8EF4087327B15334002030DF /* BucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList.swift; sourceTree = "<group>"; };
+		8EF4087527B24E86002030DF /* ListItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				8EF4084227AF1EAD002030DF /* MapView.swift */,
 				8EF4087127B15099002030DF /* ListRow.swift */,
 				8EF4087327B15334002030DF /* BucketList.swift */,
+				8EF4087527B24E86002030DF /* ListItemDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				8EF4083527AF1969002030DF /* ContentView.swift in Sources */,
 				8EF4084327AF1EAD002030DF /* MapView.swift in Sources */,
 				8EF4083327AF1969002030DF /* BucketListApp.swift in Sources */,
+				8EF4087627B24E86002030DF /* ListItemDetail.swift in Sources */,
 				8EF4084127AF1DA4002030DF /* CircleImage.swift in Sources */,
 				8EF4087427B15334002030DF /* BucketList.swift in Sources */,
 				8EF4087227B15099002030DF /* ListRow.swift in Sources */,
