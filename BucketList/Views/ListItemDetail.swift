@@ -8,42 +8,44 @@
 import SwiftUI
 
 struct ListItemDetail: View {
+    var listItem: ListItem
+    
     var body: some View {
-        VStack {
-            MapView()
+        ScrollView {
+            MapView(coordinate: listItem.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height:300)
             
-            CircleImage()
+            CircleImage(image: listItem.image)
                 .offset(y:-130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Burj Khalifa")
+                Text(listItem.name)
                     .font(.title)
                 HStack {
-                    Text("Downtown")
+                    Text(listItem.state)
                     Spacer()
-                    Text("Dubai")
+                    Text(listItem.state)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
                 
-                Text("About Burj Khalifa")
+                Text("About \(listItem.name)")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text(listItem.description)
             }
             .padding()
-            
-            Spacer()
         }
+        .navigationTitle(listItem.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct ListItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemDetail()
+        ListItemDetail(listItem: listItems[0])
     }
 }
