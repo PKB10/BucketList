@@ -26,6 +26,11 @@ struct BucketList: View {
 
 struct BucketList_Previews: PreviewProvider {
     static var previews: some View {
-        BucketList()
+        ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
+                    BucketList()
+                        .previewDevice(PreviewDevice(rawValue: deviceName))
+                        .previewDisplayName(deviceName)
+                }
+
     }
 }
