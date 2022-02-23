@@ -46,6 +46,6 @@ struct ListItemDetail: View {
 
 struct ListItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemDetail(listItem: listItems[0])
+        ListItemDetail(listItem: ListData().listItems[0])
     }
 }

@@ -17,13 +17,23 @@ struct ListRow: View {
              .resizable()
              .frame(width: 50, height: 50)
             Text(listItem.name)
+            
             Spacer()
+            
+            if listItem.isFavorite {
+                            Image(systemName: "star.fill")
+                            .foregroundColor(.purple)
+                        }
         }
     }
 }
 
 struct ListRow_Previews: PreviewProvider {
+    
+    static var listItems = ListData().listItems
+    
     static var previews: some View {
+        
         Group {
             ListRow(listItem: listItems[0])
             ListRow(listItem: listItems[1])
