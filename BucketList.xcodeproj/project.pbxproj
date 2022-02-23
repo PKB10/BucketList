@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E40D36F27C6515B0035F124 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40D36E27C6515B0035F124 /* FavoriteButton.swift */; };
 		8EF4083327AF1969002030DF /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4083227AF1969002030DF /* BucketListApp.swift */; };
 		8EF4083527AF1969002030DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4083427AF1969002030DF /* ContentView.swift */; };
 		8EF4083727AF196D002030DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF4083627AF196D002030DF /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E40D36E27C6515B0035F124 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		8EF4082F27AF1969002030DF /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF4083227AF1969002030DF /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		8EF4083427AF1969002030DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E40D37027C651ED0035F124 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4087127B15099002030DF /* ListRow.swift */,
+				8EF4087327B15334002030DF /* BucketList.swift */,
+				8EF4087527B24E86002030DF /* ListItemDetail.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8E40D37127C6520D0035F124 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4084027AF1DA4002030DF /* CircleImage.swift */,
+				8EF4084227AF1EAD002030DF /* MapView.swift */,
+				8E40D36E27C6515B0035F124 /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8EF4082627AF1969002030DF = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +118,9 @@
 		8EF4086F27B14FF6002030DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8E40D37127C6520D0035F124 /* Helpers */,
 				8EF4083427AF1969002030DF /* ContentView.swift */,
-				8EF4084027AF1DA4002030DF /* CircleImage.swift */,
-				8EF4084227AF1EAD002030DF /* MapView.swift */,
-				8EF4087127B15099002030DF /* ListRow.swift */,
-				8EF4087327B15334002030DF /* BucketList.swift */,
-				8EF4087527B24E86002030DF /* ListItemDetail.swift */,
+				8E40D37027C651ED0035F124 /* List */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +208,7 @@
 				8EF4084727AF2A66002030DF /* ListItem.swift in Sources */,
 				8EF4083527AF1969002030DF /* ContentView.swift in Sources */,
 				8EF4084327AF1EAD002030DF /* MapView.swift in Sources */,
+				8E40D36F27C6515B0035F124 /* FavoriteButton.swift in Sources */,
 				8EF4083327AF1969002030DF /* BucketListApp.swift in Sources */,
 				8EF4087627B24E86002030DF /* ListItemDetail.swift in Sources */,
 				8EF4084127AF1DA4002030DF /* CircleImage.swift in Sources */,
