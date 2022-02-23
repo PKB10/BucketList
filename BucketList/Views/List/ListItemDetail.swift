@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ListItemDetail: View {
+    
+    @EnvironmentObject var listData: ListData
     var listItem: ListItem
     
+    var listItemIndex: Int {
+        listData.listItems.firstIndex(where: { $0.id == listItem.id })!
+        }
+
     var body: some View {
         ScrollView {
             MapView(coordinate: listItem.locationCoordinate)
@@ -21,8 +27,11 @@ struct ListItemDetail: View {
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text(listItem.name)
-                    .font(.title)
+                HStack {
+                    Text(listItem.name)
+                        .font(.title)
+                    FavoriteButton(isSet: $listData.listItems[listItemIndex].isFavorite)
+                }
                 HStack {
                     Text(listItem.state)
                     Spacer()
